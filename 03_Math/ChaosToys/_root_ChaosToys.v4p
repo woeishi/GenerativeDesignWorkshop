@@ -1,0 +1,153 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta25.1.dtd" >
+   <PATCH nodename="C:\Users\luca\Documents\My Dropbox\vvvvjing\_MyContributions\ChaosToys\ChaosToys\_root_ChaosToys.v4p" bgcolor="12632256" filename="C:\Users\luca\Documents\My Dropbox\vvvvjing\_MyContributions\ChaosToys\_root_ChaosToys.v4p" locked="0" systemname="_root_ChaosToys">
+   <BOUNDS height="3825" left="0" top="0" type="Window" width="5490">
+   </BOUNDS>
+   <NODE componentmode="Hidden" hiddenwhenlocked="1" id="14" nodename="CreateNode (VVVV)" systemname="CreateNode (VVVV)">
+   <BOUNDS height="270" left="3360" top="6060" type="Node" width="1785">
+   </BOUNDS>
+   <PIN pinname="Node ID" visible="1">
+   </PIN>
+   <PIN pinname="Create Node" visible="1">
+   </PIN>
+   <PIN pinname="Node Name" visible="1">
+   </PIN>
+   <PIN pinname="Parent Patch" pintype="Input" slicecount="1" visible="-1" values="self">
+   </PIN>
+   <PIN pinname="Query Save" pintype="Input" slicecount="1" visible="-1" values="0">
+   </PIN>
+   <PIN pinname="Can Create" pintype="Output" visible="-1">
+   </PIN>
+   </NODE>
+   <NODE componentmode="Hidden" hiddenwhenlocked="1" id="13" nodename="Dir (File)" systemname="Dir (File)">
+   <BOUNDS height="270" left="1590" top="4635" type="Node" width="1215">
+   </BOUNDS>
+   <PIN pinname="Mask" pintype="Input" slicecount="1" visible="-1" values="*.v4p">
+   </PIN>
+   <PIN pinname="Include Subdirectories" pintype="Input" slicecount="1" visible="-1" values="1">
+   </PIN>
+   <PIN pinname="Directory" pintype="Input" slicecount="1" visible="-1" values="plugins">
+   </PIN>
+   <PIN pinname="Update" pintype="Input" slicecount="1" visible="-1" values="0">
+   </PIN>
+   <PIN pinname="Filenames" visible="1">
+   </PIN>
+   <PIN pinname="Short Filenames" visible="1">
+   </PIN>
+   <PIN pinname="Include Hidden" pintype="Input" slicecount="1" visible="-1" values="0">
+   </PIN>
+   <PIN pinname="File Count" pintype="Output" visible="-1">
+   </PIN>
+   </NODE>
+   <NODE componentmode="Hidden" hiddenwhenlocked="1" id="12" nodename="GetSlice (Spreads)" systemname="GetSlice (String)">
+   <BOUNDS height="270" left="3375" top="4875" type="Node" width="1770">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Index" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Bin Size" pintype="Input" slicecount="1" visible="-1" values="1">
+   </PIN>
+   <PIN pinname="Output Bins" pintype="Output" visible="-1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="12" dstpinname="Input" hiddenwhenlocked="1" srcnodeid="13" srcpinname="Filenames">
+   </LINK>
+   <NODE componentmode="InABox" id="11" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
+   <BOUNDS height="100" left="4380" top="450" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="720" left="4380" top="450" type="Box" width="750">
+   </BOUNDS>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="7">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="17">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="12" dstpinname="Index" hiddenwhenlocked="1" srcnodeid="11" srcpinname="Y Output Value">
+   </LINK>
+   <NODE componentmode="InABox" hiddenwhenlocked="0" id="10" nodename="IOBox (Value Advanced)" systemname="IOBox (String)">
+   <BOUNDS height="100" left="135" top="1275" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="2100" left="135" top="1275" type="Box" width="2685">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="1">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="10">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show SliceIndex" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="10" dstpinname="Input String" hiddenwhenlocked="1" srcnodeid="13" srcpinname="Short Filenames">
+   </LINK>
+   <NODE componentmode="Hidden" hiddenwhenlocked="1" id="9" nodename="Change (Animation)" systemname="Change (Animation)">
+   <BOUNDS height="270" left="5085" top="5490" type="Node" width="735">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="OnChange" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="9" dstpinname="Input" hiddenwhenlocked="1" srcnodeid="11" srcpinname="Y Output Value">
+   </LINK>
+   <LINK dstnodeid="14" dstpinname="Create Node" hiddenwhenlocked="1" srcnodeid="9" srcpinname="OnChange">
+   </LINK>
+   <LINK dstnodeid="14" dstpinname="Node Name" hiddenwhenlocked="1" srcnodeid="12" srcpinname="Output">
+   </LINK>
+   <NODE componentmode="InABox" id="8" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="45" top="0" type="Node" width="915">
+   </BOUNDS>
+   <BOUNDS height="360" left="45" top="0" type="Box" width="4335">
+   </BOUNDS>
+   <BOUNDS height="160" left="6945" top="13050" type="Window" width="215">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="0" values="|ChaosToys browser|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="12">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="7" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="120" top="405" type="Node" width="1710">
+   </BOUNDS>
+   <BOUNDS height="780" left="120" top="405" type="Box" width="4200">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="0" values="|Explore chaos !&cr;&lf;&cr;&lf;Choose from the list below by modifing this number ==&gt;|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="6" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="225" top="4575" type="Node" width="630">
+   </BOUNDS>
+   <BOUNDS height="270" left="225" top="4575" type="Box" width="630">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="0" values="|by fibo|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InAWindow" filename="plugins\2dPeano\Peano (2d) help.v4p" hiddenwhenlocked="1" id="16" nodename="plugins\2dPeano\Peano (2d) help.v4p" systemname="Peano (2d) help">
+   <BOUNDS height="270" left="4230" top="3975" type="Node" width="1455">
+   </BOUNDS>
+   <PIN pinname="ID" pintype="Output" visible="1">
+   </PIN>
+   <BOUNDS height="8190" left="14055" top="0" type="Window" width="8520">
+   </BOUNDS>
+   <PIN pinname="CenterY">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="14" dstpinname="Node ID" hiddenwhenlocked="1" srcnodeid="16" srcpinname="ID">
+   </LINK>
+   </PATCH>

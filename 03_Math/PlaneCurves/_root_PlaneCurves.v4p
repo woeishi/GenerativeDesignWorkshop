@@ -1,0 +1,151 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta25.1.dtd" >
+   <PATCH nodename="C:\Users\luca\Documents\My Dropbox\vvvvjing\_MyContributions\PlaneCurves\PlaneCurves\_root_PlaneCurves.v4p" bgcolor="12566463" filename="C:\Users\luca\Documents\My Dropbox\vvvvjing\_MyContributions\PlaneCurves\_root_PlaneCurves.v4p" systemname="_root_PlaneCurves">
+   <BOUNDS height="3795" left="0" top="0" type="Window" width="5865">
+   </BOUNDS>
+   <NODE componentmode="Hidden" hiddenwhenlocked="1" id="0" nodename="CreateNode (VVVV)" systemname="CreateNode (VVVV)">
+   <BOUNDS height="100" left="4020" top="6270" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="Node ID" visible="1">
+   </PIN>
+   <PIN pinname="Create Node" visible="1">
+   </PIN>
+   <PIN pinname="Node Name" visible="1">
+   </PIN>
+   <PIN pinname="Parent Patch" pintype="Input" slicecount="1" visible="-1" values="self">
+   </PIN>
+   <PIN pinname="Query Save" pintype="Input" slicecount="1" visible="-1" values="0">
+   </PIN>
+   <PIN pinname="Can Create" pintype="Output" visible="-1">
+   </PIN>
+   </NODE>
+   <NODE componentmode="Hidden" hiddenwhenlocked="1" id="1" nodename="Dir (File)" systemname="Dir (File)">
+   <BOUNDS height="270" left="1500" top="4845" type="Node" width="1215">
+   </BOUNDS>
+   <PIN pinname="Mask" pintype="Input" slicecount="1" visible="-1" values="*.v4p">
+   </PIN>
+   <PIN pinname="Include Subdirectories" pintype="Input" slicecount="1" visible="-1" values="1">
+   </PIN>
+   <PIN pinname="Directory" pintype="Input" slicecount="1" visible="-1" values="plugins">
+   </PIN>
+   <PIN pinname="Update" pintype="Input" slicecount="1" visible="-1" values="0">
+   </PIN>
+   <PIN pinname="Filenames" visible="1">
+   </PIN>
+   <PIN pinname="Short Filenames" visible="1">
+   </PIN>
+   <PIN pinname="Include Hidden" pintype="Input" slicecount="1" visible="-1" values="0">
+   </PIN>
+   <PIN pinname="File Count" pintype="Output" visible="-1">
+   </PIN>
+   </NODE>
+   <NODE componentmode="Hidden" hiddenwhenlocked="1" id="2" nodename="GetSlice (Spreads)" systemname="GetSlice (String)">
+   <BOUNDS height="270" left="4035" top="5085" type="Node" width="975">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Index" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Bin Size" pintype="Input" slicecount="1" visible="-1" values="1">
+   </PIN>
+   <PIN pinname="Output Bins" pintype="Output" visible="-1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="2" dstpinname="Input" hiddenwhenlocked="1" srcnodeid="1" srcpinname="Filenames">
+   </LINK>
+   <NODE componentmode="InABox" id="3" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
+   <BOUNDS height="100" left="4245" top="495" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="720" left="4245" top="495" type="Box" width="750">
+   </BOUNDS>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="17">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="2" dstpinname="Index" hiddenwhenlocked="1" srcnodeid="3" srcpinname="Y Output Value">
+   </LINK>
+   <NODE componentmode="InABox" id="6" nodename="IOBox (Value Advanced)" systemname="IOBox (String)">
+   <BOUNDS height="100" left="45" top="1335" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="1485" left="45" top="1335" type="Box" width="2685">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="1">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="8">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show SliceIndex" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="6" dstpinname="Input String" hiddenwhenlocked="1" srcnodeid="1" srcpinname="Short Filenames">
+   </LINK>
+   <NODE componentmode="Hidden" hiddenwhenlocked="1" id="8" nodename="Change (Animation)" systemname="Change (Animation)">
+   <BOUNDS height="100" left="4950" top="5715" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="OnChange" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="8" dstpinname="Input" hiddenwhenlocked="1" srcnodeid="3" srcpinname="Y Output Value">
+   </LINK>
+   <LINK dstnodeid="0" dstpinname="Create Node" hiddenwhenlocked="1" srcnodeid="8" srcpinname="OnChange">
+   </LINK>
+   <LINK dstnodeid="0" dstpinname="Node Name" hiddenwhenlocked="1" srcnodeid="2" srcpinname="Output">
+   </LINK>
+   <NODE componentmode="InABox" id="9" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="15" top="15" type="Node" width="915">
+   </BOUNDS>
+   <BOUNDS height="360" left="15" top="15" type="Box" width="4335">
+   </BOUNDS>
+   <BOUNDS height="160" left="6945" top="13050" type="Window" width="215">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="0" values="|PlaneCurves browser|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="12">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="10" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="30" top="465" type="Node" width="1710">
+   </BOUNDS>
+   <BOUNDS height="780" left="30" top="465" type="Box" width="4200">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="0" values="|Explore plane curves !&cr;&lf;&cr;&lf;Choose from the list below by modifing this number ==&gt;|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="11" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="135" top="5835" type="Node" width="630">
+   </BOUNDS>
+   <BOUNDS height="270" left="135" top="5835" type="Box" width="630">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="0" values="|by fibo|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InAWindow" filename="plugins\2dBifolium\Bifolium (2d) help.v4p" hiddenwhenlocked="1" id="7" nodename="plugins\2dBifolium\Bifolium (2d) help.v4p" systemname="Bifolium (2d) help" path="C:\Users\luca\Documents\My Dropbox\vvvvjing\_MyContributions\PlaneCurves\PlaneCurves\plugins\Hypotrochoid\">
+   <BOUNDS height="100" left="4470" top="4290" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="10350" left="5850" top="0" type="Window" width="9000">
+   </BOUNDS>
+   <PIN pinname="ID" pintype="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="0" dstpinname="Node ID" hiddenwhenlocked="1" srcnodeid="7" srcpinname="ID">
+   </LINK>
+   </PATCH>
