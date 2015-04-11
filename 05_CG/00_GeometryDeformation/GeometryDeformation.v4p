@@ -1,13 +1,13 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\readme\Desktop\Repositories\generativedesignworkshop\05_CG\00_GeometryDeformation\GeometryDeformation.v4p" systemname="Template" filename="C:\Users\readme\Desktop\Repositories\generativedesignworkshop\Template.v4p" scrollx="0" scrolly="0">
+   <PATCH nodename="C:\Users\readme\Desktop\repositories\generativedesignworkshop\05_CG\00_GeometryDeformation\GeometryDeformation.v4p" systemname="Template" filename="C:\Users\readme\Desktop\Repositories\generativedesignworkshop\Template.v4p" scrollx="0" scrolly="0">
    <BOUNDS type="Window" left="2025" top="2580" width="6915" height="7230">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
    <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InAWindow" id="0">
-   <BOUNDS type="Node" left="450" top="6105" width="100" height="100">
+   <BOUNDS type="Node" left="450" top="6405" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="450" top="6105" width="2400" height="1800">
+   <BOUNDS type="Box" left="450" top="6405" width="2400" height="1800">
    </BOUNDS>
    <BOUNDS type="Window" left="8955" top="2580" width="6120" height="4860">
    </BOUNDS>
@@ -65,7 +65,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="855" top="1035" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="20">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="30">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -115,7 +115,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Mesh (EX9.Geometry Join)" nodename="Mesh (EX9.Geometry Join)" componentmode="Hidden" id="10">
-   <BOUNDS type="Node" left="600" top="5115" width="960" height="270">
+   <BOUNDS type="Node" left="600" top="5100" width="960" height="270">
    </BOUNDS>
    <PIN pinname="Vertex Buffer" visible="1">
    </PIN>
@@ -129,7 +129,7 @@
    <LINK srcnodeid="5" srcpinname="Indices" dstnodeid="10" dstpinname="Indices" linkstyle="PolyLine">
    </LINK>
    <NODE systemname="Camera (Transform Softimage)" filename="%VVVV%\lib\nodes\modules\Transform\Camera (Transform Softimage).v4p" nodename="Camera (Transform Softimage)" componentmode="Hidden" id="11">
-   <BOUNDS type="Node" left="2025" top="6120" width="100" height="100">
+   <BOUNDS type="Node" left="1410" top="6075" width="100" height="100">
    </BOUNDS>
    <PIN pinname="View" visible="1">
    </PIN>
@@ -139,12 +139,10 @@
    </PIN>
    <PIN pinname="Position" visible="1">
    </PIN>
+   <BOUNDS type="Box" left="1410" top="6075">
+   </BOUNDS>
    </NODE>
-   <LINK srcnodeid="11" srcpinname="Projection" dstnodeid="0" dstpinname="Projection" linkstyle="VHV">
-   <LINKPOINT x="2355" y="6233">
-   </LINKPOINT>
-   <LINKPOINT x="1770" y="6233">
-   </LINKPOINT>
+   <LINK srcnodeid="11" srcpinname="Projection" dstnodeid="0" dstpinname="Projection" linkstyle="PolyLine">
    </LINK>
    <LINK srcnodeid="6" srcpinname="Normal XYZ" dstnodeid="8" dstpinname="Normal XYZ" linkstyle="VHV">
    <LINKPOINT x="1500" y="4555">
@@ -163,7 +161,7 @@
    </PIN>
    <PIN pinname="Input Count" slicecount="1" values="3">
    </PIN>
-   <PIN pinname="Input 3" slicecount="1" values="1" visible="1">
+   <PIN pinname="Input 3" slicecount="1" visible="1" values="1">
    </PIN>
    </NODE>
    <NODE systemname="Simplex (3d)" filename="%VVVV%\addonpack\lib\nodes\plugins\SimplexNoise.dll" nodename="Simplex (3d)" componentmode="Hidden" id="15">
@@ -173,11 +171,11 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Frequency" slicecount="1" values="1.94" visible="1">
+   <PIN pinname="Frequency" slicecount="1" visible="1" values="1.94">
    </PIN>
-   <PIN pinname="Persistance" slicecount="1" values="0.5" visible="1">
+   <PIN pinname="Persistance" slicecount="1" visible="1" values="0.5">
    </PIN>
-   <PIN pinname="Octaves" slicecount="1" values="1" visible="1">
+   <PIN pinname="Octaves" slicecount="1" visible="1" values="1">
    </PIN>
    </NODE>
    <NODE systemname="Select (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Select (Value)" componentmode="Hidden" id="16">
@@ -191,32 +189,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="15" srcpinname="Output" dstnodeid="16" dstpinname="Input">
-   </LINK>
-   <NODE systemname="Rotate (Transform)" nodename="Rotate (Transform)" componentmode="Hidden" id="21">
-   <BOUNDS type="Node" left="2190" top="6465" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Transform In" visible="1">
-   </PIN>
-   <PIN pinname="Transform Out" visible="1">
-   </PIN>
-   <PIN pinname="Y" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="11" srcpinname="View" dstnodeid="21" dstpinname="Transform In">
-   </LINK>
-   <NODE systemname="Integrate (Differential)" nodename="Integrate (Differential)" componentmode="Hidden" id="23">
-   <BOUNDS type="Node" left="2895" top="6465" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Position Out" visible="1">
-   </PIN>
-   <PIN pinname="Position In" slicecount="1" values="0.1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="23" srcpinname="Position Out" dstnodeid="21" dstpinname="Y" linkstyle="VHV">
-   <LINKPOINT x="2895" y="6585">
-   </LINKPOINT>
-   <LINKPOINT x="2610" y="6585">
-   </LINKPOINT>
    </LINK>
    <NODE systemname="Add (Value)" nodename="Add (Value)" componentmode="Hidden" id="25">
    <BOUNDS type="Node" left="600" top="4245" width="765" height="270">
@@ -283,14 +255,12 @@
    </BOUNDS>
    <PIN pinname="Input 1" visible="1">
    </PIN>
-   <PIN pinname="Input 2" visible="1">
+   <PIN pinname="Input 2" visible="1" slicecount="1" values="69.7161156564097">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="6" srcpinname="Position XYZ" dstnodeid="32" dstpinname="Input 1" linkstyle="PolyLine">
-   </LINK>
-   <LINK srcnodeid="31" srcpinname="Position Out" dstnodeid="32" dstpinname="Input 2">
    </LINK>
    <LINK srcnodeid="32" srcpinname="Output" dstnodeid="15" dstpinname="Position Input XYZ" linkstyle="PolyLine">
    </LINK>
@@ -309,7 +279,7 @@
    <LINK srcnodeid="33" srcpinname="Y Output Value" dstnodeid="31" dstpinname="Position In">
    </LINK>
    <NODE id="26" systemname="Normals (EX9.Geometry Mesh)" nodename="Normals (EX9.Geometry Mesh)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
-   <BOUNDS type="Node" left="600" top="5445" width="100" height="100">
+   <BOUNDS type="Node" left="600" top="5430" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Smoothing Angle" slicecount="1" pintype="Input" visible="1" values="0.5">
    </PIN>
@@ -353,8 +323,6 @@
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="9" srcpinname="Layer" dstnodeid="0" dstpinname="Layers">
-   </LINK>
-   <LINK srcnodeid="21" srcpinname="Transform Out" dstnodeid="0" dstpinname="View">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="36" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="3150" top="2565" width="315" height="240">
@@ -405,5 +373,9 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="38" srcpinname="Y Output Value" dstnodeid="15" dstpinname="Persistance">
+   </LINK>
+   <LINK srcnodeid="11" srcpinname="View" dstnodeid="0" dstpinname="View" linkstyle="PolyLine">
+   </LINK>
+   <LINK srcnodeid="31" srcpinname="Position Out" dstnodeid="32" dstpinname="Input 2">
    </LINK>
    </PATCH>
