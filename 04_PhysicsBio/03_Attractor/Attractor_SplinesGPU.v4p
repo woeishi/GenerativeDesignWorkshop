@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\readme\Desktop\Repositories\generativedesignworkshop\03_PhysicsBio\03_Attractor\Attractor_SplinesGPU.v4p" systemname="Attractor_SplinesGPU" filename="C:\Users\readme\Desktop\Repositories\generativedesignworkshop\03_PhysicsBio\03_Attractor\Attractor_SplinesGPU.v4p" scrollx="0" scrolly="0">
+   <PATCH nodename="D:\develop\GenDesWS\04_PhysicsBio\03_Attractor\Attractor_SplinesGPU.v4p" systemname="Attractor_SplinesGPU" filename="C:\Users\readme\Desktop\Repositories\generativedesignworkshop\03_PhysicsBio\03_Attractor\Attractor_SplinesGPU.v4p" scrollx="0" scrolly="0">
    <BOUNDS type="Window" left="840" top="2580" width="7350" height="7725">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
@@ -17,7 +17,7 @@
    </PIN>
    <PIN pinname="Projection" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Windowed Antialiasing Quality Level" slicecount="1" values="4">
+   <PIN pinname="Windowed Antialiasing Quality Level" slicecount="1" values="NONE">
    </PIN>
    <PIN pinname="Windowed Depthbuffer Format" slicecount="1" values="NONE">
    </PIN>
@@ -143,7 +143,7 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Attractor Radius" slicecount="1" values="0.76" visible="1">
+   <PIN pinname="Attractor Radius" slicecount="1" visible="1" values="0.76">
    </PIN>
    <PIN pinname="Attractor Power" slicecount="1" visible="1" values="0.07">
    </PIN>
@@ -273,9 +273,9 @@
    </PIN>
    <PIN pinname="Random Seed" slicecount="1" visible="1" values="6">
    </PIN>
-   <PIN pinname="Width" slicecount="1" values="0.8" visible="1">
+   <PIN pinname="Width" slicecount="1" visible="1" values="0.8">
    </PIN>
-   <PIN pinname="Input" slicecount="1" values="0.4" visible="1">
+   <PIN pinname="Input" slicecount="1" visible="1" values="0.4">
    </PIN>
    </NODE>
    <LINK srcnodeid="28" srcpinname="Y Output Value" dstnodeid="33" dstpinname="Spread Count">
@@ -291,42 +291,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="33" srcpinname="Output" dstnodeid="34" dstpinname="Go To Position">
-   </LINK>
-   <NODE componentmode="Hidden" filename="SplinesGPU\effects\B-Spline Cubic PhongDirectional GPU.fx" id="38" nodename="B-Spline Cubic PhongDirectional GPU (EX9.Effect)" systemname="B-Spline Cubic PhongDirectional GPU (EX9.Effect)">
-   <BOUNDS height="270" left="1080" top="6165" type="Node" width="3420">
-   </BOUNDS>
-   <PIN pinname="Position Texture" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Control Texture" visible="1">
-   </PIN>
-   <PIN pinname="Factor Phase Texture" visible="1">
-   </PIN>
-   <PIN pinname="Mesh" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Layer" visible="1">
-   </PIN>
-   <PIN pinname="Size" visible="1" slicecount="1" values="16">
-   </PIN>
-   <PIN pinname="alpha" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Ambient Color" slicecount="1" values="|0.20019,0.20019,0.20019,1.00000|">
-   </PIN>
-   <PIN pinname="Diffuse Color" slicecount="1" values="|0.65723,0.65723,0.65723,1.00000|">
-   </PIN>
-   <PIN pinname="Specular Color" slicecount="1" values="|0.80041,0.80041,0.80041,1.00000|">
-   </PIN>
-   <PIN pinname="Enabled" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Render State" slicecount="1" visible="1" values="||">
-   </PIN>
-   <PIN pinname="Technique" slicecount="1" values="| BSplineCubic_PhongDirectional|">
-   </PIN>
-   <PIN pinname="pitch" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Texture" visible="1" slicecount="1" values="||">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="38" srcpinname="Layer" dstnodeid="0" dstpinname="Layers">
    </LINK>
    <NODE componentmode="Hidden" id="40" nodename="DynamicTexture (EX9.Texture Value)" systemname="DynamicTexture (EX9.Texture Value)">
    <BOUNDS height="270" left="3645" top="5820" type="Node" width="1815">
@@ -357,10 +321,6 @@
    <LINK srcnodeid="8" srcpinname="Y Output Value" dstnodeid="40" dstpinname="Width">
    </LINK>
    <LINK srcnodeid="9" srcpinname="Y Output Value" dstnodeid="40" dstpinname="Height">
-   </LINK>
-   <LINK srcnodeid="40" srcpinname="Texture Out" dstnodeid="38" dstpinname="Position Texture">
-   </LINK>
-   <LINK srcnodeid="8" srcpinname="Y Output Value" dstnodeid="38" dstpinname="Size">
    </LINK>
    <NODE systemname="Vector (3d Split)" nodename="Vector (3d Split)" componentmode="Hidden" id="41">
    <BOUNDS type="Node" left="4545" top="4410" width="600" height="270">
@@ -424,32 +384,6 @@
    </NODE>
    <LINK srcnodeid="44" srcpinname="Output" dstnodeid="40" dstpinname="Alpha">
    </LINK>
-   <LINK srcnodeid="30" srcpinname="Render State Out" dstnodeid="38" dstpinname="Render State" linkstyle="VHV">
-   <LINKPOINT x="555" y="6285">
-   </LINKPOINT>
-   <LINKPOINT x="1080" y="6285">
-   </LINKPOINT>
-   </LINK>
-   <NODE componentmode="Hidden" filename="SplinesGPU\subpatches\Spline (EX9 Mesh).v4p" id="39" nodename="Spline (EX9 Mesh)" systemname="Spline (EX9 Mesh)">
-   <BOUNDS height="100" left="1275" top="5790" type="Node" width="100">
-   </BOUNDS>
-   <PIN pinname="Mesh" visible="1">
-   </PIN>
-   <PIN pinname="Spline Count" visible="1" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Curves Per Spline" pintype="Input" slicecount="1" visible="-1" values="1">
-   </PIN>
-   <PIN pinname="Resolution X" slicecount="1" visible="1" values="40">
-   </PIN>
-   <PIN pinname="Update" slicecount="1" values="0">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="39" srcpinname="Mesh" dstnodeid="38" dstpinname="Mesh">
-   </LINK>
-   <LINK srcnodeid="9" srcpinname="Y Output Value" dstnodeid="39" dstpinname="Spline Count">
-   </LINK>
-   <LINK srcnodeid="42" srcpinname="Y Output Value" dstnodeid="39" dstpinname="Resolution X">
-   </LINK>
    <LINK srcnodeid="34" srcpinname="Position Out" dstnodeid="12" dstpinname="Attractor Radius">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="50" systemname="IOBox (Value Advanced)">
@@ -499,7 +433,7 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Destination Minimum" slicecount="1" values="0.25" visible="1">
+   <PIN pinname="Destination Minimum" slicecount="1" visible="1" values="0.25">
    </PIN>
    </NODE>
    <LINK srcnodeid="41" srcpinname="Z" dstnodeid="52" dstpinname="Input">
@@ -535,5 +469,71 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="54" srcpinname="Y Output Value" dstnodeid="52" dstpinname="Destination Minimum">
+   </LINK>
+   <NODE componentmode="Hidden" filename="..\..\contributions\SplinesGPU\subpatches\Spline (EX9 Mesh).v4p" id="39" nodename="Spline (EX9 Mesh)" systemname="Spline (EX9 Mesh)">
+   <BOUNDS height="100" left="1275" top="5790" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="Mesh" visible="1">
+   </PIN>
+   <PIN pinname="Spline Count" visible="1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Curves Per Spline" pintype="Input" slicecount="1" visible="-1" values="1">
+   </PIN>
+   <PIN pinname="Resolution X" slicecount="1" visible="1" values="40">
+   </PIN>
+   <PIN pinname="Update" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="9" srcpinname="Y Output Value" dstnodeid="39" dstpinname="Spline Count">
+   </LINK>
+   <LINK srcnodeid="42" srcpinname="Y Output Value" dstnodeid="39" dstpinname="Resolution X">
+   </LINK>
+   <NODE componentmode="Hidden" filename="..\..\contributions\SplinesGPU\effects\B-Spline Cubic PhongDirectional GPU.fx" id="38" nodename="B-Spline Cubic PhongDirectional GPU (EX9.Effect)" systemname="B-Spline Cubic PhongDirectional GPU (EX9.Effect)">
+   <BOUNDS height="270" left="1080" top="6165" type="Node" width="3420">
+   </BOUNDS>
+   <PIN pinname="Position Texture" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Control Texture" visible="1">
+   </PIN>
+   <PIN pinname="Factor Phase Texture" visible="1">
+   </PIN>
+   <PIN pinname="Mesh" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Size" visible="1" slicecount="1" values="16">
+   </PIN>
+   <PIN pinname="alpha" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Ambient Color" slicecount="1" values="|0.20019,0.20019,0.20019,1.00000|">
+   </PIN>
+   <PIN pinname="Diffuse Color" slicecount="1" values="|0.65723,0.65723,0.65723,1.00000|">
+   </PIN>
+   <PIN pinname="Specular Color" slicecount="1" values="|0.80041,0.80041,0.80041,1.00000|">
+   </PIN>
+   <PIN pinname="Enabled" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Render State" slicecount="1" visible="1" values="||">
+   </PIN>
+   <PIN pinname="Technique" slicecount="1" values="| BSplineCubic_PhongDirectional|">
+   </PIN>
+   <PIN pinname="pitch" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Texture" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="38" srcpinname="Layer" dstnodeid="0" dstpinname="Layers">
+   </LINK>
+   <LINK srcnodeid="40" srcpinname="Texture Out" dstnodeid="38" dstpinname="Position Texture">
+   </LINK>
+   <LINK srcnodeid="8" srcpinname="Y Output Value" dstnodeid="38" dstpinname="Size">
+   </LINK>
+   <LINK srcnodeid="30" srcpinname="Render State Out" dstnodeid="38" dstpinname="Render State" linkstyle="VHV">
+   <LINKPOINT x="555" y="6285">
+   </LINKPOINT>
+   <LINKPOINT x="1080" y="6285">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="39" srcpinname="Mesh" dstnodeid="38" dstpinname="Mesh">
    </LINK>
    </PATCH>
