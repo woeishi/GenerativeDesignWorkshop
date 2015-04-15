@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\readme\Desktop\Repositories\generativedesignworkshop\01_General\04_Recursion\Recursion3d.v4p" systemname="Template" filename="C:\Users\readme\Desktop\Repositories\generativedesignworkshop\Template.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="930" top="255" width="5685" height="7620">
+   <PATCH nodename="C:\Users\Johannes Lemke\Repositories\generativedesignworkshop\02_Feedback\02_Recursion\Recursion3d.v4p" systemname="Template" filename="C:\Users\readme\Desktop\Repositories\generativedesignworkshop\Template.v4p" scrollx="0" scrolly="0">
+   <BOUNDS type="Window" left="924" top="252" width="5684" height="7868">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
@@ -47,7 +47,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="135" top="555" width="3795" height="390">
    </BOUNDS>
-   <PIN pinname="Input String" visible="0" slicecount="1" values="|General || Recursion|">
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Feedback || Recursion 3d Cubes|">
    </PIN>
    <PIN pinname="Output String" visible="0">
    </PIN>
@@ -103,7 +103,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="2025" top="1830" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="3">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="2">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -183,7 +183,7 @@
    </PIN>
    <PIN pinname="Enable AA" visible="1">
    </PIN>
-   <PIN pinname="Aspect Ratio Transform" visible="1">
+   <PIN pinname="Aspect Ratio Transform" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
    <NODE componentmode="InABox" id="56" nodename="IOBOX (VALUE ADVANCED)" systemname="IOBox (Value Advanced)">
@@ -372,12 +372,6 @@
    <PIN pinname="Alignment" slicecount="1" values="FitHeight">
    </PIN>
    </NODE>
-   <LINK dstnodeid="57" dstpinname="Aspect Ratio Transform" srcnodeid="48" srcpinname="Transform Out" linkstyle="VHV">
-   <LINKPOINT x="1875" y="6575">
-   </LINKPOINT>
-   <LINKPOINT x="7560" y="6475">
-   </LINKPOINT>
-   </LINK>
    <LINK srcnodeid="57" srcpinname="Layer" dstnodeid="0" dstpinname="Layers">
    </LINK>
    <LINK srcnodeid="3" srcpinname="Mesh" dstnodeid="57" dstpinname="Mesh">
@@ -390,14 +384,26 @@
    <LINKPOINT x="7005" y="5925">
    </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="48" srcpinname="Transform Out" dstnodeid="0" dstpinname="Aspect Ratio">
+   <LINK srcnodeid="48" srcpinname="Transform Out" dstnodeid="0" dstpinname="Aspect Ratio" linkstyle="VHV">
+   <LINKPOINT x="1848" y="6409">
+   </LINKPOINT>
+   <LINKPOINT x="1610" y="6409">
+   </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="0" srcpinname="Actual Backbuffer Width" dstnodeid="48" dstpinname="Aspect Width">
+   <LINK srcnodeid="0" srcpinname="Actual Backbuffer Width" dstnodeid="48" dstpinname="Aspect Width" linkstyle="VHV">
+   <LINKPOINT x="1274" y="6409">
+   </LINKPOINT>
+   <LINKPOINT x="2065" y="6409">
+   </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="0" srcpinname="Actual Backbuffer Height" dstnodeid="48" dstpinname="Aspect Height">
+   <LINK srcnodeid="0" srcpinname="Actual Backbuffer Height" dstnodeid="48" dstpinname="Aspect Height" linkstyle="VHV">
+   <LINKPOINT x="1442" y="6409">
+   </LINKPOINT>
+   <LINKPOINT x="2275" y="6409">
+   </LINKPOINT>
    </LINK>
    <NODE systemname="Vector (2d Join)" nodename="Vector (2d Join)" componentmode="Hidden" id="58">
-   <BOUNDS type="Node" left="1290" top="6735" width="100" height="100">
+   <BOUNDS type="Node" left="1220" top="6735" width="100" height="100">
    </BOUNDS>
    <PIN pinname="X" visible="1">
    </PIN>
@@ -408,12 +414,16 @@
    </NODE>
    <LINK srcnodeid="0" srcpinname="Actual Backbuffer Width" dstnodeid="58" dstpinname="X" linkstyle="PolyLine">
    </LINK>
-   <LINK srcnodeid="0" srcpinname="Actual Backbuffer Height" dstnodeid="58" dstpinname="Y" linkstyle="PolyLine">
+   <LINK srcnodeid="0" srcpinname="Actual Backbuffer Height" dstnodeid="58" dstpinname="Y" linkstyle="VHV">
+   <LINKPOINT x="1442" y="6633">
+   </LINKPOINT>
+   <LINKPOINT x="1722" y="6633">
+   </LINKPOINT>
    </LINK>
    <LINK srcnodeid="58" srcpinname="XY" dstnodeid="57" dstpinname="Viewport Size" linkstyle="VHV">
-   <LINKPOINT x="1320" y="7265">
+   <LINKPOINT x="1270" y="7265">
    </LINKPOINT>
-   <LINKPOINT x="5310" y="7165">
+   <LINKPOINT x="5290" y="7165">
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="61" systemname="IOBox (Value Advanced)">
@@ -478,6 +488,12 @@
    <LINKPOINT x="1365" y="6255">
    </LINKPOINT>
    <LINKPOINT x="6435" y="6255">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="48" srcpinname="Transform Out" dstnodeid="57" dstpinname="Aspect Ratio Transform" linkstyle="VHV">
+   <LINKPOINT x="1876" y="6678">
+   </LINKPOINT>
+   <LINKPOINT x="7567" y="6678">
    </LINKPOINT>
    </LINK>
    </PATCH>
