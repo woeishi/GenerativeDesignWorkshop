@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\readme\Desktop\Repositories\generativedesignworkshop\01_General\04_Recursion\Recursion.v4p" filename="D:\__wrkn\_wrkshpBurg\01_Noise.v4p" systemname="01_Noise" scrollx="0" scrolly="0">
-   <BOUNDS height="5160" left="420" top="780" type="Window" width="4650">
+   <PATCH nodename="D:\develop\GenDesWS\01_General\04_Recursion\Recursion.v4p" filename="D:\__wrkn\_wrkshpBurg\01_Noise.v4p" systemname="01_Noise" scrollx="0" scrolly="0">
+   <BOUNDS height="6015" left="420" top="780" type="Window" width="4650">
    </BOUNDS>
    <NODE componentmode="InAWindow" id="3" nodename="Renderer (EX9)" systemname="RENDERER (EX9)" stayontop="0">
    <BOUNDS height="100" left="600" top="4305" type="Node" width="100">
@@ -79,7 +79,7 @@
    </PIN>
    </NODE>
    <NODE id="94" componentmode="InABox" nodename="IOBox (String)" systemname="IOBox (String)">
-   <PIN pinname="Input String" slicecount="1" visible="0" values="|Recursion || Koch Curve|">
+   <PIN pinname="Input String" slicecount="1" visible="0" values="|Recursion || Helge von Koch|">
    </PIN>
    <BOUNDS type="Node" height="270" left="30" top="480" width="2130">
    </BOUNDS>
@@ -94,7 +94,7 @@
    <PIN pinname="Size" slicecount="1" values="7">
    </PIN>
    </NODE>
-   <NODE systemname="KochCurve (Value)" filename="ValueKochCurve\ValueKochCurve.csproj" nodename="KochCurve (Value)" componentmode="Hidden" id="65">
+   <NODE systemname="KochCurve (2d)" filename="KochCurve2d\KochCurve2d.csproj" nodename="KochCurve (2d)" componentmode="Hidden" id="65">
    <BOUNDS type="Node" left="765" top="3270" width="100" height="100">
    </BOUNDS>
    <PIN pinname="OutputXY" visible="1">
@@ -127,7 +127,7 @@
    </PIN>
    <PIN pinname="Width" slicecount="1" values="-1">
    </PIN>
-   <PIN pinname="Spread Count" slicecount="1" values="10" visible="1">
+   <PIN pinname="Spread Count" slicecount="1" visible="1" values="10">
    </PIN>
    <PIN pinname="Input" slicecount="1" values="0">
    </PIN>
@@ -236,4 +236,46 @@
    </NODE>
    <LINK srcnodeid="116" srcpinname="Y Output Value" dstnodeid="107" dstpinname="Spread Count">
    </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="117" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="480" top="4695" width="4080" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="480" top="4695" width="4080" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="https://en.wikipedia.org/wiki/Iterated_function_system">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="URL">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="118" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="480" top="5370" width="2775" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="480" top="5370" width="2775" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="https://en.wikipedia.org/wiki/Fractal">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="URL">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="119" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="480" top="5025" width="3390" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="480" top="5025" width="3390" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="https://en.wikipedia.org/wiki/Koch_snowflake">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="URL">
+   </PIN>
+   </NODE>
    </PATCH>
