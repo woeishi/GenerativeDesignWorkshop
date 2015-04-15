@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="D:\develop\GenDesWS\01_General\02_Noise\Noise.v4p" scrollx="0" scrolly="0" systemname="callmenames" filename="C:\Users\readme\Desktop\callmenames.v4p">
+   <PATCH nodename="C:\Users\Johannes Lemke\Repositories\generativedesignworkshop\01_Random\02_Noise\Noise.v4p" scrollx="0" scrolly="0" systemname="callmenames" filename="C:\Users\readme\Desktop\callmenames.v4p">
    <BOUNDS type="Window" left="1725" top="1575" width="4485" height="6615">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
@@ -202,34 +202,6 @@
    </LINK>
    <LINK srcnodeid="1" srcpinname="Layer" dstnodeid="13" dstpinname="Layers">
    </LINK>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="23" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="105" top="120" width="2130" height="270">
-   </BOUNDS>
-   <BOUNDS type="Box" left="105" top="120" width="3525" height="420">
-   </BOUNDS>
-   <PIN pinname="Input String" visible="0" slicecount="1" values="|generative design workshop|">
-   </PIN>
-   <PIN pinname="Output String" visible="0">
-   </PIN>
-   <PIN pinname="Show Grid" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Rows" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Size" slicecount="1" values="12">
-   </PIN>
-   </NODE>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="22" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="105" top="510" width="2130" height="270">
-   </BOUNDS>
-   <BOUNDS type="Box" left="105" top="510" width="2130" height="270">
-   </BOUNDS>
-   <PIN pinname="Input String" visible="0" slicecount="1" values="|General || Noise|">
-   </PIN>
-   <PIN pinname="Output String" visible="0">
-   </PIN>
-   <PIN pinname="Show Grid" slicecount="1" values="1">
-   </PIN>
-   </NODE>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="25">
    <BOUNDS type="Node" left="2520" top="3090" width="100" height="100">
    </BOUNDS>
@@ -308,6 +280,34 @@
    <PIN pinname="Show Grid" slicecount="1" values="0">
    </PIN>
    <PIN pinname="String Type" slicecount="1" values="URL">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="31" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="112" top="126" width="2130" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="112" top="126" width="3795" height="390">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Generative Design Algorithms|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="12">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="30" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="112" top="516" width="2130" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="112" top="516" width="3795" height="390">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Random || Noise|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
    </PIN>
    </NODE>
    </PATCH>
