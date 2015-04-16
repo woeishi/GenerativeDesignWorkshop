@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\readme\Desktop\Repositories\generativedesignworkshop\03_PhysicsBio\01_Lindenmayer\Lindenmayer.v4p" systemname="Template" filename="C:\Users\readme\Desktop\Repositories\generativedesignworkshop\Template.v4p" scrollx="0" scrolly="0" locked="0">
+   <PATCH nodename="D:\develop\GenDesWS\04_PhysicsBio\01_Lindenmayer\Lindenmayer.v4p" systemname="Template" filename="C:\Users\readme\Desktop\Repositories\generativedesignworkshop\Template.v4p" scrollx="0" scrolly="0" locked="0">
    <BOUNDS type="Window" left="2460" top="3240" width="8685" height="7800">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
@@ -202,6 +202,10 @@
    <PIN pinname="Maximum Zoom" slicecount="1" values="10">
    </PIN>
    <PIN pinname="Minimum Zoom" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Initial TranslateXY" slicecount="2" values="0,-0.5">
+   </PIN>
+   <PIN pinname="Initial Zoom" slicecount="1" values="0.33">
    </PIN>
    </NODE>
    <LINK srcnodeid="21" srcpinname="Transform Out" dstnodeid="0" dstpinname="View">
