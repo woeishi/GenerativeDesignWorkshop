@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="D:\develop\GenDesWS\02_Math\03_Splines\03_Bezier.v4p" systemname="03_Bezier" filename="D:\develop\GenDesWS\02_Math\03_Splines\03_Bezier.v4p" scrollx="0" scrolly="0">
+   <PATCH nodename="C:\Users\Johannes Lemke\Repositories\generativedesignworkshop\03_Math\03_Splines\03_Bezier.v4p" systemname="03_Bezier" filename="D:\develop\GenDesWS\02_Math\03_Splines\03_Bezier.v4p" scrollx="0" scrolly="0">
    <BOUNDS type="Window" left="2025" top="2580" width="4290" height="8655">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
@@ -39,7 +39,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="135" top="555" width="3795" height="390">
    </BOUNDS>
-   <PIN pinname="Input String" visible="0" slicecount="1" values="|Math || Bezier|">
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Math || Splines Bezier|">
    </PIN>
    <PIN pinname="Output String" visible="0">
    </PIN>
@@ -501,7 +501,7 @@
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
-   <PIN pinname="Select" slicecount="1" values="1" visible="1">
+   <PIN pinname="Select" slicecount="1" visible="1" values="1">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>

@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="D:\develop\GenDesWS\02_Math\03_Splines\01_Interpolation.v4p" systemname="01_Interpolation" filename="D:\develop\GenDesWS\02_Math\03_Splines\01_Interpolation.v4p" scrollx="0" scrolly="0">
+   <PATCH nodename="C:\Users\Johannes Lemke\Repositories\generativedesignworkshop\03_Math\03_Splines\01_Interpolation.v4p" systemname="01_Interpolation" filename="D:\develop\GenDesWS\02_Math\03_Splines\01_Interpolation.v4p" scrollx="0" scrolly="0">
    <BOUNDS type="Window" left="2025" top="2580" width="4275" height="4845">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
@@ -33,7 +33,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="135" top="555" width="3795" height="390">
    </BOUNDS>
-   <PIN pinname="Input String" visible="0" slicecount="1" values="|Math || Interpolation|">
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Math || Splines Interpolation|">
    </PIN>
    <PIN pinname="Output String" visible="0">
    </PIN>
