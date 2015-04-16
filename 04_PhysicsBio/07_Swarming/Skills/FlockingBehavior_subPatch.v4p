@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta26.dtd" >
-   <PATCH nodename="C:\Users\Raul\Desktop\FlockingBehavior\Skills\FlockingBehavior_subPatch.v4p" filename="C:\Users\Raul\Desktop\FlockingBehavior_New\FlockingBehavior_subPatch.v4p" systemname="FlockingBehavior_subPatch">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
+   <PATCH nodename="C:\Users\Johannes Lemke\Repositories\generativedesignworkshop\04_PhysicsBio\07_Swarming\Skills\FlockingBehavior_subPatch.v4p" filename="C:\Users\Raul\Desktop\FlockingBehavior_New\FlockingBehavior_subPatch.v4p" systemname="FlockingBehavior_subPatch">
    <BOUNDS height="14445" left="14820" top="2355" type="Window" width="17925">
    </BOUNDS>
    <NODE componentmode="InABox" id="3" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
@@ -212,12 +212,12 @@
    <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    </NODE>
-   <NODE componentmode="InAWindow" id="358" nodename="Renderer (EX9)" systemname="Renderer (EX9)">
+   <NODE componentmode="InAWindow" id="358" nodename="Renderer (EX9)" systemname="RENDERER (EX9)">
    <BOUNDS height="100" left="165" top="15795" type="Node" width="100">
    </BOUNDS>
    <BOUNDS height="1800" left="165" top="15795" type="Box" width="2400">
    </BOUNDS>
-   <BOUNDS height="7425" left="330" top="360" type="Window" width="9315">
+   <BOUNDS height="7420" left="8442" top="2184" type="Window" width="9310">
    </BOUNDS>
    <PIN pinname="Layers" visible="1">
    </PIN>
@@ -442,7 +442,7 @@
    </NODE>
    <LINK dstnodeid="687" dstpinname="Input String" srcnodeid="688" srcpinname="Output">
    </LINK>
-   <NODE componentmode="Hidden" id="699" nodename="Writer (File)" systemname="Writer (File)">
+   <NODE componentmode="Hidden" id="699" nodename="Writer (File)" systemname="Writer (String)">
    <BOUNDS height="100" left="19140" top="38115" type="Node" width="100">
    </BOUNDS>
    <PIN pinname="Content" visible="1">
@@ -450,6 +450,8 @@
    <PIN pinname="Write" visible="1">
    </PIN>
    <PIN pinname="Filename" visible="1">
+   </PIN>
+   <PIN pinname="Encoding" slicecount="1" values="|System Default|">
    </PIN>
    </NODE>
    <LINK dstnodeid="699" dstpinname="Content" srcnodeid="688" srcpinname="Output">
@@ -570,7 +572,7 @@
    <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    </NODE>
-   <NODE componentmode="Hidden" id="745" nodename="FrameDelay (Animation)" systemname="FrameDelay (Animation)">
+   <NODE componentmode="Hidden" id="745" nodename="FrameDelay (Animation)" systemname="FrameDelay (Animation Legacy)">
    <BOUNDS height="100" left="6450" top="9165" type="Node" width="100">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1">
@@ -766,7 +768,7 @@
    </LINK>
    <LINK dstnodeid="822" dstpinname="FilterTime" srcnodeid="833" srcpinname="Output">
    </LINK>
-   <NODE componentmode="Hidden" filename="Helpers.v4p" hiddenwhenlocked="1" id="837" nodename="Helpers.v4p" systemname="Helpers" path="C:\Users\Raul\Desktop\FlockingBehavior\Skills\">
+   <NODE componentmode="Hidden" filename="Helpers.v4p" hiddenwhenlocked="1" id="837" nodename="Helpers.v4p" systemname="Helpers">
    <BOUNDS height="270" left="2085" top="11160" type="Node" width="13065">
    </BOUNDS>
    <BOUNDS height="3600" left="2085" top="11160" type="Box" width="4800">
@@ -832,7 +834,7 @@
    </NODE>
    <LINK dstnodeid="837" dstpinname="Enabled_FlockingArea" hiddenwhenlocked="1" srcnodeid="839" srcpinname="Y Output Value">
    </LINK>
-   <NODE componentmode="Hidden" filename="Taget_EnemyGenerator.v4p" id="844" nodename="Taget_EnemyGenerator.v4p" systemname="Taget_EnemyGenerator" path="C:\Users\Raul\Desktop\FlockingBehavior\Skills\">
+   <NODE componentmode="Hidden" filename="Taget_EnemyGenerator.v4p" id="844" nodename="Taget_EnemyGenerator.v4p" systemname="Taget_EnemyGenerator">
    <BOUNDS height="270" left="7080" top="3570" type="Node" width="1905">
    </BOUNDS>
    <BOUNDS height="3600" left="7080" top="3570" type="Box" width="4800">
@@ -1378,4 +1380,6 @@
    </LINK>
    <LINK dstnodeid="974" dstpinname="Go To Position" srcnodeid="978" srcpinname="IsLanded">
    </LINK>
+   <PACK Name="addonpack" Version="33.7.0">
+   </PACK>
    </PATCH>
