@@ -1,0 +1,3 @@
+http://vvvv.org/documentation/tonfilm-patches#quaternion-julia-set
+
+by tonfilm

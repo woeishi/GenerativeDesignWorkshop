@@ -1,0 +1,4 @@
+http://vvvv.org/contribution/mandelbulb
+
+by vux
+ported from Inigo Quilez (iq/rgba)
