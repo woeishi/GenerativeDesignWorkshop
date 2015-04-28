@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta26.dtd" >
-   <PATCH nodename="C:\Users\Raul\Desktop\FlockingBehavior\Behaviorss\AnimalBehavior_subPatch.v4p" filename="C:\Users\Raul\Desktop\FlockingBehavior\Behaviorss\AnimalBehavior_subPatch.v4p" systemname="AnimalBehavior_subPatch">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
+   <PATCH nodename="C:\Users\Johannes Lemke\Repositories\generativedesignworkshop\04_PhysicsBio\07_Swarming\Behaviorss\AnimalBehavior_subPatch.v4p" filename="C:\Users\Raul\Desktop\FlockingBehavior\Behaviorss\AnimalBehavior_subPatch.v4p" systemname="AnimalBehavior_subPatch">
    <BOUNDS height="12990" left="12705" top="4560" type="Window" width="17355">
    </BOUNDS>
    <NODE componentmode="InABox" id="3" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
@@ -212,12 +212,12 @@
    <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    </NODE>
-   <NODE componentmode="InAWindow" id="358" nodename="Renderer (EX9)" systemname="Renderer (EX9)">
+   <NODE componentmode="InAWindow" id="358" nodename="Renderer (EX9)" systemname="RENDERER (EX9)">
    <BOUNDS height="100" left="180" top="15795" type="Node" width="100">
    </BOUNDS>
    <BOUNDS height="1800" left="180" top="15795" type="Box" width="2400">
    </BOUNDS>
-   <BOUNDS height="8730" left="0" top="0" type="Window" width="12450">
+   <BOUNDS height="6027" left="6349" top="441" type="Window" width="8421">
    </BOUNDS>
    <PIN pinname="Layers" visible="1">
    </PIN>
@@ -384,7 +384,7 @@
    </NODE>
    <LINK dstnodeid="687" dstpinname="Input String" srcnodeid="688" srcpinname="Output">
    </LINK>
-   <NODE componentmode="Hidden" id="699" nodename="Writer (File)" systemname="Writer (File)">
+   <NODE componentmode="Hidden" id="699" nodename="Writer (File)" systemname="Writer (String)">
    <BOUNDS height="100" left="19140" top="38115" type="Node" width="100">
    </BOUNDS>
    <PIN pinname="Content" visible="1">
@@ -392,6 +392,8 @@
    <PIN pinname="Write" visible="1">
    </PIN>
    <PIN pinname="Filename" visible="1">
+   </PIN>
+   <PIN pinname="Encoding" slicecount="1" values="|System Default|">
    </PIN>
    </NODE>
    <LINK dstnodeid="699" dstpinname="Content" srcnodeid="688" srcpinname="Output">
@@ -488,7 +490,7 @@
    <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="Landing_RampDown">
    </PIN>
    </NODE>
-   <NODE componentmode="Hidden" id="745" nodename="FrameDelay (Animation)" systemname="FrameDelay (Animation)">
+   <NODE componentmode="Hidden" id="745" nodename="FrameDelay (Animation)" systemname="FrameDelay (Animation Legacy)">
    <BOUNDS height="100" left="6450" top="9165" type="Node" width="100">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1">
@@ -606,7 +608,7 @@
    <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="EnemyXYZ">
    </PIN>
    </NODE>
-   <NODE componentmode="Hidden" filename="Helpers.v4p" hiddenwhenlocked="1" id="837" nodename="Helpers.v4p" systemname="Helpers" path="C:\Users\Raul\Desktop\FlockingBehavior\Behaviorss\">
+   <NODE componentmode="Hidden" filename="Helpers.v4p" hiddenwhenlocked="1" id="837" nodename="Helpers.v4p" systemname="Helpers">
    <BOUNDS height="270" left="3945" top="11775" type="Node" width="13065">
    </BOUNDS>
    <BOUNDS height="3600" left="3945" top="11775" type="Box" width="4800">
@@ -1238,4 +1240,6 @@
    </LINK>
    <LINK srcnodeid="1005" srcpinname="Output" dstnodeid="837" dstpinname="Enemy_Scale" hiddenwhenlocked="1">
    </LINK>
+   <PACK Name="addonpack" Version="33.7.0">
+   </PACK>
    </PATCH>

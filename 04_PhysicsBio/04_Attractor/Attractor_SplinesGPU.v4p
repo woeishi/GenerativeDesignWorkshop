@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="D:\develop\GenDesWS\04_PhysicsBio\03_Attractor\Attractor_SplinesGPU.v4p" systemname="Attractor_SplinesGPU" filename="C:\Users\readme\Desktop\Repositories\generativedesignworkshop\03_PhysicsBio\03_Attractor\Attractor_SplinesGPU.v4p" scrollx="0" scrolly="0">
+   <PATCH nodename="C:\Users\Johannes Lemke\Repositories\generativedesignworkshop\04_PhysicsBio\04_Attractor\Attractor_SplinesGPU.v4p" systemname="Attractor_SplinesGPU" filename="C:\Users\readme\Desktop\Repositories\generativedesignworkshop\03_PhysicsBio\03_Attractor\Attractor_SplinesGPU.v4p" scrollx="0" scrolly="0">
    <BOUNDS type="Window" left="840" top="2580" width="7350" height="7725">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
@@ -43,7 +43,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="135" top="555" width="3795" height="390">
    </BOUNDS>
-   <PIN pinname="Input String" visible="0" slicecount="1" values="|Physics and Bio || Attractors|">
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Physics and Bio || Attractor Splines GPU|">
    </PIN>
    <PIN pinname="Output String" visible="0">
    </PIN>

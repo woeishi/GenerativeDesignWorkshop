@@ -1,0 +1,6 @@
+http://vvvv.org/contribution/interleaved-ssao-with-cubemap-lighting
+
+by m4d
+original technique http://vvvv.org/contribution/ssao
+initial version port by joreg
+edgeblur by dottore

@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\readme\Desktop\Repositories\generativedesignworkshop\04_Untitled\01_ConnectAll\ConnectAll.v4p" systemname="Template" filename="C:\Users\readme\Desktop\Repositories\generativedesignworkshop\Template.v4p" scrollx="0" scrolly="0">
+   <PATCH nodename="C:\Users\Johannes Lemke\Repositories\generativedesignworkshop\05_Tessellation\01_ConnectAll\ConnectAll.v4p" systemname="Template" filename="C:\Users\readme\Desktop\Repositories\generativedesignworkshop\Template.v4p" scrollx="0" scrolly="0">
    <BOUNDS type="Window" left="2025" top="2580" width="4275" height="6285">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
@@ -47,7 +47,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="135" top="555" width="3795" height="390">
    </BOUNDS>
-   <PIN pinname="Input String" visible="0" slicecount="1" values="|Untitled || Connect All|">
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Tesselation || Connect All|">
    </PIN>
    <PIN pinname="Output String" visible="0">
    </PIN>
@@ -61,7 +61,7 @@
    </PIN>
    <PIN pinname="OutputXYZ" visible="1">
    </PIN>
-   <PIN pinname="Max Radius" slicecount="1" values="0.57" visible="1">
+   <PIN pinname="Max Radius" slicecount="1" visible="1" values="0.57">
    </PIN>
    <PIN pinname="Distance" visible="1">
    </PIN>

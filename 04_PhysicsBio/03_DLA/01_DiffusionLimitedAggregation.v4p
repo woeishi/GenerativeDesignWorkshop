@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="D:\develop\GenDesWS\03_PhysicsBio\02_DLA\DiffusionLimitedAggregation.v4p" systemname="Template" filename="C:\Users\readme\Desktop\Repositories\generativedesignworkshop\Template.v4p" scrollx="0" scrolly="15">
+   <PATCH nodename="C:\Users\Johannes Lemke\Repositories\generativedesignworkshop\04_PhysicsBio\03_DLA\01_DiffusionLimitedAggregation.v4p" systemname="Template" filename="C:\Users\readme\Desktop\Repositories\generativedesignworkshop\Template.v4p" scrollx="0" scrolly="15">
    <BOUNDS type="Window" left="1005" top="2565" width="5310" height="9180">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
@@ -35,7 +35,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="135" top="555" width="3795" height="390">
    </BOUNDS>
-   <PIN pinname="Input String" visible="0" slicecount="1" values="|Physics || Diffusion Limited Aggregation|">
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Physics and Bio || Diffusion Limited Aggregation|">
    </PIN>
    <PIN pinname="Output String" visible="0">
    </PIN>

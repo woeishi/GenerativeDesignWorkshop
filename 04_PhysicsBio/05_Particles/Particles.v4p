@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="D:\develop\GenDesWS\04_PhysicsBio\05_Particles\Particles.v4p" systemname="Particles" filename="D:\develop\GenDesWS\04_PhysicsBio\05_Particles\Particles.v4p">
+   <PATCH nodename="C:\Users\Johannes Lemke\Repositories\generativedesignworkshop\04_PhysicsBio\05_Particles\Particles.v4p" systemname="Particles" filename="D:\develop\GenDesWS\04_PhysicsBio\05_Particles\Particles.v4p" scrollx="0" scrolly="-360">
    <BOUNDS type="Window" left="2025" top="2580" width="4275" height="6930">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
@@ -41,7 +41,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="135" top="555" width="3795" height="390">
    </BOUNDS>
-   <PIN pinname="Input String" visible="0" slicecount="1" values="|Physics/Bio || Particles|">
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Physics and Bio || Particles|">
    </PIN>
    <PIN pinname="Output String" visible="0">
    </PIN>

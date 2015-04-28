@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="D:\develop\GenDesWS\03_PhysicsBio\02_DLA\DLA_NoIntersect.v4p" systemname="DLA_NoIntersect" filename="D:\develop\GenDesWS\03_PhysicsBio\02_DLA\DLA_NoIntersect.v4p" scrollx="0" scrolly="15">
+   <PATCH nodename="C:\Users\Johannes Lemke\Repositories\generativedesignworkshop\04_PhysicsBio\03_DLA\02_DLA_NoIntersect.v4p" systemname="DLA_NoIntersect" filename="D:\develop\GenDesWS\03_PhysicsBio\02_DLA\DLA_NoIntersect.v4p" scrollx="0" scrolly="15">
    <BOUNDS type="Window" left="1005" top="2565" width="5310" height="9180">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
@@ -35,7 +35,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="135" top="555" width="3795" height="390">
    </BOUNDS>
-   <PIN pinname="Input String" visible="0" slicecount="1" values="|Physics || Diffusion Limited Aggregation|">
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Physics and Bio || Diffusion Limited Aggregation|">
    </PIN>
    <PIN pinname="Output String" visible="0">
    </PIN>
@@ -161,7 +161,7 @@
    </PIN>
    <PIN pinname="Insert" visible="1" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Reset" slicecount="1" values="0" visible="1">
+   <PIN pinname="Reset" slicecount="1" visible="1" values="0">
    </PIN>
    <BOUNDS type="Box" left="345" top="5490">
    </BOUNDS>

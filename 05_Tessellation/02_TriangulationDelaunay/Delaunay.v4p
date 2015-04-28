@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="D:\develop\GenDesWS\04_Untitled\02_TriangulationDelaunay\Delaunay.v4p" systemname="Template" filename="C:\Users\readme\Desktop\Repositories\generativedesignworkshop\Template.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="420" top="2595" width="6945" height="9255">
+   <PATCH nodename="C:\Users\Johannes Lemke\Repositories\generativedesignworkshop\05_Tessellation\02_TriangulationDelaunay\Delaunay.v4p" systemname="Template" filename="C:\Users\readme\Desktop\Repositories\generativedesignworkshop\Template.v4p" scrollx="0" scrolly="0">
+   <BOUNDS type="Window" left="0" top="756" width="6944" height="9373">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
@@ -9,7 +9,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="495" top="8475" width="2400" height="1800">
    </BOUNDS>
-   <BOUNDS type="Window" left="6885" top="2595" width="6120" height="4860">
+   <BOUNDS type="Window" left="6951" top="770" width="6118" height="4858">
    </BOUNDS>
    <PIN pinname="Layers" visible="1" slicecount="1" values="||">
    </PIN>
@@ -35,7 +35,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="135" top="555" width="3795" height="390">
    </BOUNDS>
-   <PIN pinname="Input String" visible="0" slicecount="1" values="|Physics and Bio || Delaunay Triangulation|">
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Tesselation || Delaunay Triangulation|">
    </PIN>
    <PIN pinname="Output String" visible="0">
    </PIN>
