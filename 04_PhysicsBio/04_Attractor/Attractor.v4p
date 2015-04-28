@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Johannes Lemke\Repositories\generativedesignworkshop\04_PhysicsBio\04_Attractor\Attractor.v4p" filename="D:\__wrkn\_wrkshpBurg\01_Noise.v4p" systemname="01_Noise" scrollx="21" scrolly="0">
+   <PATCH nodename="D:\develop\GenDesWS\04_PhysicsBio\04_Attractor\Attractor.v4p" filename="D:\__wrkn\_wrkshpBurg\01_Noise.v4p" systemname="01_Noise" scrollx="21" scrolly="0">
    <BOUNDS height="8309" left="357" top="1092" type="Window" width="8995">
    </BOUNDS>
    <NODE componentmode="InAWindow" id="3" nodename="Renderer (EX9)" systemname="RENDERER (EX9)">
@@ -311,7 +311,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="7560" top="1155" width="480" height="450">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="1">
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Show Value" slicecount="1" values="0">
    </PIN>
@@ -327,7 +327,7 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Show Attractor|">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="1">
+   <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    </NODE>
    <NODE systemname="RandomSpread (Spreads)" nodename="RandomSpread (Spreads)" componentmode="Hidden" id="132">
