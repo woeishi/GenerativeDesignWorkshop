@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Johannes Lemke\Repositories\generativedesignworkshop\03_Math\03_Splines\01_Interpolation.v4p" systemname="01_Interpolation" filename="D:\develop\GenDesWS\02_Math\03_Splines\01_Interpolation.v4p" scrollx="0" scrolly="0">
+   <PATCH nodename="D:\develop\GenDesWS\03_Math\03_Splines\01_Interpolation.v4p" systemname="01_Interpolation" filename="D:\develop\GenDesWS\02_Math\03_Splines\01_Interpolation.v4p" scrollx="0" scrolly="0">
    <BOUNDS type="Window" left="2025" top="2580" width="4275" height="4845">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
@@ -69,7 +69,7 @@
    </BOUNDS>
    <PIN pinname="Transform Out" visible="1">
    </PIN>
-   <PIN pinname="ScaleY" visible="1">
+   <PIN pinname="ScaleY" visible="1" slicecount="6" values="0.698436256265268,0.266827802173793,0.968976161675528,0.967438687104732,0.582192844478413,0.937360735610127">
    </PIN>
    <PIN pinname="TranslateX" visible="1">
    </PIN>
@@ -101,7 +101,7 @@
    </PIN>
    <PIN pinname="Input" slicecount="1" values="0.5">
    </PIN>
-   <PIN pinname="Random Seed" slicecount="1" values="2">
+   <PIN pinname="Random Seed" slicecount="1" values="2" visible="1">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="8" systemname="IOBox (Value Advanced)">
@@ -124,8 +124,6 @@
    </LINK>
    <LINK srcnodeid="8" srcpinname="Y Output Value" dstnodeid="7" dstpinname="Spread Count">
    </LINK>
-   <LINK srcnodeid="7" srcpinname="Output" dstnodeid="5" dstpinname="ScaleY">
-   </LINK>
    <LINK srcnodeid="6" srcpinname="Output" dstnodeid="5" dstpinname="TranslateX">
    </LINK>
    <NODE systemname="Line (EX9.Geometry)" nodename="Line (EX9.Geometry)" componentmode="Hidden" id="9">
@@ -136,6 +134,8 @@
    <PIN pinname="Layer" visible="1">
    </PIN>
    <PIN pinname="Color" slicecount="1" values="|1.00000,0.00000,0.00000,1.00000|">
+   </PIN>
+   <PIN pinname="Width" slicecount="1" values="5">
    </PIN>
    </NODE>
    <LINK srcnodeid="4" srcpinname="Layer" dstnodeid="3" dstpinname="Layer 1">
@@ -217,15 +217,13 @@
    <NODE systemname="Add (Value)" nodename="Add (Value)" componentmode="Hidden" id="15">
    <BOUNDS type="Node" left="2865" top="2355" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input 2" visible="1">
+   <PIN pinname="Input 2" visible="1" slicecount="6" values="0.423032539169616,0.0583844562705305,0.368190273521956,0.134929976048634,0.987782347906641,0.516042128067291">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
    <PIN pinname="Input 1" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="7" srcpinname="Output" dstnodeid="15" dstpinname="Input 2">
-   </LINK>
    <LINK srcnodeid="15" srcpinname="Output" dstnodeid="10" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="14" srcpinname="Y Output Value" dstnodeid="15" dstpinname="Input 1">
@@ -239,5 +237,31 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="16" srcpinname="Output Enum" dstnodeid="10" dstpinname="Mode">
+   </LINK>
+   <NODE systemname="LFO (Animation)" nodename="LFO (Animation)" componentmode="Hidden" id="17">
+   <BOUNDS type="Node" left="1815" top="1035" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Cycles" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="17" srcpinname="Cycles" dstnodeid="7" dstpinname="Random Seed">
+   </LINK>
+   <NODE systemname="Oscillator (Animation)" nodename="Oscillator (Animation)" componentmode="Hidden" id="18">
+   <BOUNDS type="Node" left="1785" top="1875" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Go To Position" visible="1">
+   </PIN>
+   <PIN pinname="Position Out" visible="1">
+   </PIN>
+   <PIN pinname="FilterTime" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Cyclics / second" slicecount="1" values="1.5">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="7" srcpinname="Output" dstnodeid="18" dstpinname="Go To Position">
+   </LINK>
+   <LINK srcnodeid="18" srcpinname="Position Out" dstnodeid="15" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="18" srcpinname="Position Out" dstnodeid="5" dstpinname="ScaleY">
    </LINK>
    </PATCH>

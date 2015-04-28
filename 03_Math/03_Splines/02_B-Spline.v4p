@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Johannes Lemke\Repositories\generativedesignworkshop\03_Math\03_Splines\02_B-Spline.v4p" systemname="02_B-Spline" filename="D:\develop\GenDesWS\02_Math\03_Splines\02_B-Spline.v4p" scrollx="0" scrolly="0">
+   <PATCH nodename="D:\develop\GenDesWS\03_Math\03_Splines\02_B-Spline.v4p" systemname="02_B-Spline" filename="D:\develop\GenDesWS\02_Math\03_Splines\02_B-Spline.v4p" scrollx="0" scrolly="0">
    <BOUNDS type="Window" left="2025" top="2580" width="4275" height="6900">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
@@ -69,7 +69,7 @@
    </BOUNDS>
    <PIN pinname="Transform Out" visible="1">
    </PIN>
-   <PIN pinname="ScaleY" visible="1">
+   <PIN pinname="ScaleY" visible="1" slicecount="7" values="0.337994336849079,0.538230418227613,0.197956557618454,0.991708495188504,0.69803727674298,0.477341106161475,0.661232127109543">
    </PIN>
    <PIN pinname="TranslateX" visible="1">
    </PIN>
@@ -95,7 +95,7 @@
    </PIN>
    </NODE>
    <NODE systemname="RandomSpread (Spreads)" nodename="RandomSpread (Spreads)" componentmode="Hidden" id="7">
-   <BOUNDS type="Node" left="975" top="1530" width="100" height="100">
+   <BOUNDS type="Node" left="975" top="1815" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Spread Count" visible="1">
    </PIN>
@@ -103,7 +103,7 @@
    </PIN>
    <PIN pinname="Input" slicecount="1" values="0.5">
    </PIN>
-   <PIN pinname="Random Seed" slicecount="1" values="2">
+   <PIN pinname="Random Seed" slicecount="1" values="2" visible="1">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="8" systemname="IOBox (Value Advanced)">
@@ -126,8 +126,6 @@
    </LINK>
    <LINK srcnodeid="8" srcpinname="Y Output Value" dstnodeid="7" dstpinname="Spread Count">
    </LINK>
-   <LINK srcnodeid="7" srcpinname="Output" dstnodeid="5" dstpinname="ScaleY">
-   </LINK>
    <LINK srcnodeid="6" srcpinname="Output" dstnodeid="5" dstpinname="TranslateX">
    </LINK>
    <NODE systemname="Line (EX9.Geometry)" nodename="Line (EX9.Geometry)" componentmode="Hidden" id="9">
@@ -138,6 +136,8 @@
    <PIN pinname="Layer" visible="1">
    </PIN>
    <PIN pinname="Color" slicecount="1" values="|1.00000,0.00000,0.00000,1.00000|">
+   </PIN>
+   <PIN pinname="Width" slicecount="1" values="5">
    </PIN>
    </NODE>
    <LINK srcnodeid="4" srcpinname="Layer" dstnodeid="3" dstpinname="Layer 1">
@@ -173,9 +173,9 @@
    <LINK srcnodeid="9" srcpinname="Layer" dstnodeid="3" dstpinname="Layer 2">
    </LINK>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="14">
-   <BOUNDS type="Node" left="660" top="1935" width="100" height="100">
+   <BOUNDS type="Node" left="660" top="2535" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="660" top="1935" width="795" height="240">
+   <BOUNDS type="Box" left="660" top="2535" width="795" height="240">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" values="-0.75">
    </PIN>
@@ -187,15 +187,13 @@
    <NODE systemname="Add (Value)" nodename="Add (Value)" componentmode="Hidden" id="15">
    <BOUNDS type="Node" left="2565" top="3435" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input 2" visible="1">
+   <PIN pinname="Input 2" visible="1" slicecount="7" values="0.933887861901894,0.838659518864006,0.485085218911991,0.753146498464048,0.638595308410004,0.868943997193128,0.673173527000472">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
    <PIN pinname="Input 1" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="7" srcpinname="Output" dstnodeid="15" dstpinname="Input 2">
-   </LINK>
    <LINK srcnodeid="14" srcpinname="Y Output Value" dstnodeid="15" dstpinname="Input 1">
    </LINK>
    <NODE systemname="B-Spline (Value)" nodename="B-Spline (Value)" componentmode="Hidden" id="17">
@@ -261,5 +259,31 @@
    <LINK srcnodeid="11" srcpinname="Y Output Value" dstnodeid="20" dstpinname="Spread Count">
    </LINK>
    <LINK srcnodeid="20" srcpinname="Output" dstnodeid="13" dstpinname="X">
+   </LINK>
+   <NODE systemname="LFO (Animation)" nodename="LFO (Animation)" componentmode="Hidden" id="21">
+   <BOUNDS type="Node" left="990" top="1530" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Cycles" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="21" srcpinname="Cycles" dstnodeid="7" dstpinname="Random Seed">
+   </LINK>
+   <NODE systemname="Oscillator (Animation)" nodename="Oscillator (Animation)" componentmode="Hidden" id="22">
+   <BOUNDS type="Node" left="975" top="2115" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="FilterTime" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Cyclics / second" slicecount="1" values="1.5">
+   </PIN>
+   <PIN pinname="Go To Position" visible="1">
+   </PIN>
+   <PIN pinname="Position Out" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="7" srcpinname="Output" dstnodeid="22" dstpinname="Go To Position">
+   </LINK>
+   <LINK srcnodeid="22" srcpinname="Position Out" dstnodeid="15" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="22" srcpinname="Position Out" dstnodeid="5" dstpinname="ScaleY">
    </LINK>
    </PATCH>
